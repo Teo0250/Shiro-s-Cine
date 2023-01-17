@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Shiro's Cine</title>
+</head>
+<body>
+    <header id="cabecalho" class="navbar navbar-expand-lg sticky-top p-4">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title" id="titulo">Shiro's Cine</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#sobre">
+                            <i class="bi bi-house-door me-1"></i> 
+                            Sobre o cinema
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#eventos">
+                            <i class="bi bi-calendar-check me-1"></i> 
+                            Eventos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#cartaz">
+                            <i class="bi bi-card-text me-1"></i>
+                            Em cartaz
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#contato">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true">
+        <section id="sobre">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="./images/slides/cadeiras.jpg" alt="Pipoca e Take">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./images/slides/puplico.jpg" alt="Cena 3D">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./images/slides/tela cinema.jpg" alt="Tela de cinema">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+            </div>
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="./images/cinema.jpg" class="d-block w-100 rounded" alt="Foto do espaço interno do cinema">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="section-title">Sobre <span class="text-colored">o cinema</span></h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam minus quisquam nesciunt fugiat corrupti eligendi impedit voluptatibus alias saepe voluptate omnis, similique in. Temporibus inventore porro dolorem enim odio nulla.
+                            </p>
+                            <h3 class="section-title">Sobre <span class="text-colored">o espaço</span></h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, alias id nostrum praesentium placeat inventore ipsum impedit aspernatur sapiente iste numquam dicta at dolorum dolor! Deserunt dicta soluta vero earum.
+                            </p>
+                            <ul>
+                                <li>Estácionamento</li>
+                                <li>Cinema 3D</li>
+                                <li>Cine Confort</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="eventos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Filmes <span class="text-colored">em destaque</span></h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img src="images/eventos/homem-formiga.jpeg" alt="Poster Homem-formiga" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4 ">
+                            Homem-Formiga Quantumania
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero molestias excepturi fuga fugit provident, nemo a vitae laudantium iste deleniti earum voluptate nostrum pariatur unde. Omnis aliquid adipisci labore eligendi.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/eventos/john wick 4.jpeg" alt="Poster John Wick" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            John Wick 4
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero molestias excepturi fuga fugit provident, nemo a vitae laudantium iste deleniti earum voluptate nostrum pariatur unde. Omnis aliquid adipisci labore eligendi.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="images/eventos/mario bros.jpeg" alt="Poster Mario-Bros" class="d-block w-100 rounded mb-2">
+                        <h3 class="section-title text-colored fs-4">
+                            Mario Bros - O Filme
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero molestias excepturi fuga fugit provident, nemo a vitae laudantium iste deleniti earum voluptate nostrum pariatur unde. Omnis aliquid adipisci labore eligendi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cartaz" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5">
+                        Em <span class="text-colored">cartaz</span>
+                    </h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-cardapio">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#acao" class="fw-bold text-start nav-link text-colored active">Ação</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#comedia" class="fw-bold text-start nav-link text-colored ">Comédia</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#infantil" class="fw-bold text-start nav-link text-colored ">Infantis</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#romance" class="fw-bold text-start nav-link text-colored ">Romance</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#terror" class="fw-bold text-start nav-link text-colored ">Terror</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="acao">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cartaz/ação/jogosVorazes.jpeg" alt="Jogos Vorazes">
+                                        <h5 class="text-colored fw-bold mt-2">Jogos Vorazes</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cartaz/ação/madmax.jpeg" alt="Mad Max">
+                                        <h5 class="text-colored fw-bold mt-2">Mad Max</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cartaz/ação/madmax.jpeg" alt="Mad Max">
+                                        <h5 class="text-colored fw-bold mt-2">Mad Max</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cartaz/ação/madmax.jpeg" alt="Mad Max">
+                                        <h5 class="text-colored fw-bold mt-2">Mad Max</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cartaz/ação/jogosVorazes.jpeg" alt="Jogos Vorazes">
+                                        <h5 class="text-colored fw-bold mt-2">Jogos Vorazes</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cartaz/ação/jogosVorazes.jpeg" alt="Jogos Vorazes">
+                                        <h5 class="text-colored fw-bold mt-2">Jogos Vorazes</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="comedia">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cartaz/comedia/asbraquelas.jpeg" alt="As Branquelas">
+                                        <h5 class="text-colored fw-bold mt-2">As Branquelas</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cartaz/comedia/éofim.jpeg" alt="É o fim">
+                                        <h5 class="text-colored fw-bold mt-2">É o fim</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cartaz/comedia/asbraquelas.jpeg" alt="As Branquelas">
+                                        <h5 class="text-colored fw-bold mt-2">As Branquelas</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cartaz/comedia/éofim.jpeg" alt="É o fim">
+                                        <h5 class="text-colored fw-bold mt-2">É o fim</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cartaz/comedia/asbraquelas.jpeg" alt="As Branquelas">
+                                        <h5 class="text-colored fw-bold mt-2">As Branquelas</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cartaz/comedia/éofim.jpeg" alt="É o fim">
+                                        <h5 class="text-colored fw-bold mt-2">É o fim</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="infantil">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cartaz/infantil/divertida-mente.jpeg" alt="Divertidamente">
+                                        <h5 class="text-colored fw-bold mt-2">Divertidamente</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cartaz/infantil/kung-fu panda.jpeg" alt="Kung-Fu Panda">
+                                        <h5 class="text-colored fw-bold mt-2">Kung-Fu Panda</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cartaz/infantil/divertida-mente.jpeg" alt="Divertidamente">
+                                        <h5 class="text-colored fw-bold mt-2">Divertidamente</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cartaz/infantil/kung-fu panda.jpeg" alt="Kung-Fu Panda">
+                                        <h5 class="text-colored fw-bold mt-2">Kung-Fu Panda</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cartaz/infantil/divertida-mente.jpeg" alt="Divertidamente">
+                                        <h5 class="text-colored fw-bold mt-2">Divertidamente</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cartaz/infantil/kung-fu panda.jpeg" alt="Kung-Fu Panda">
+                                        <h5 class="text-colored fw-bold mt-2">Kung-Fu Panda</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="romance">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cartaz/romance/omelhordemim.jpeg" alt="O melhor de mim">
+                                        <h5 class="text-colored fw-bold mt-2">O melhor de mim</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cartaz/romance/parasempre.jpeg" alt="Para sempre">
+                                        <h5 class="text-colored fw-bold mt-2">Para sempre</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cartaz/romance/omelhordemim.jpeg" alt="O melhor de mim">
+                                        <h5 class="text-colored fw-bold mt-2">O melhor de mim</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cartaz/romance/parasempre.jpeg" alt="Para sempre">
+                                        <h5 class="text-colored fw-bold mt-2">Para sempre</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cartaz/romance/omelhordemim.jpeg" alt="O melhor de mim">
+                                        <h5 class="text-colored fw-bold mt-2">O melhor de mim</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cartaz/romance/parasempre.jpeg" alt="Para sempre">
+                                        <h5 class="text-colored fw-bold mt-2">Para sempre</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="terror">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cartaz/terror/a entidade.jpeg" alt="A entidade">
+                                        <h5 class="text-colored fw-bold mt-2">A entidade</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cartaz/terror/panico.jpeg" alt="Panico">
+                                        <h5 class="text-colored fw-bold mt-2">Panico</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cartaz/terror/a entidade.jpeg" alt="A entidade">
+                                        <h5 class="text-colored fw-bold mt-2">A entidade</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cartaz/terror/panico.jpeg" alt="Panico">
+                                        <h5 class="text-colored fw-bold mt-2">Panico</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cartaz/terror/a entidade.jpeg" alt="A entidade">
+                                        <h5 class="text-colored fw-bold mt-2">A entidade</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="images/cartaz/terror/panico.jpeg" alt="Panico">
+                                        <h5 class="text-colored fw-bold mt-2">Panico</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contato" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Fale <span class="text-colored">Conosco</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3 ">
+                                <label for="nome" class="form-label fw-bold text-colored">Seu nome: </label>
+                                <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3 ">
+                                <label for="email" class="form-label fw-bold text-colored">Seu e-mail: </label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3 ">
+                                <label for="telefone" class="form-label fw-bold text-colored">Seu telefone (opcional): </label>
+                                <input type="tel" id="telefone" class="form-control">
+                            </div>
+                            <div class="mb-3 ">
+                                <label for="mensagem" class="form-label fw-bold text-colored">Sua mensagem: </label>
+                                <textarea id="mensagem" class="form-control" required></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Rede sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a> 
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>
+                                Rua Teste Exemplo nº 145, Bairro Bootstrap - Porto Alegre - RS
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="lib/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
