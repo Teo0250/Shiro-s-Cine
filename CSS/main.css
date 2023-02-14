@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-top: 70px;
+}
+
+body > header {
+    background-color: #2f3640;
+    padding: 16px 0;
+    color: whitesmoke;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    border-bottom: 1px  white;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+header li{
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+header li a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.articles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articles article img {
+    /*height: 100px; */
+    width: 100%;
+}
+
+.articles article {
+    width: 30%;
+}
+
+section {
+    padding: 16px 0;
+}
+
+section h2,
+.articles article {
+    margin-bottom: 16px;
+}
+
+.articles article h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.articles article a {
+    background-color: gray;
+    color: white;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    transition: 1s;
+    font-weight: bold;
+    
+}
+
+/*
+aas
+*/
+
+.articles article a:hover {
+    text-decoration: underline;
+    background-color: black;
+}
+
+.articles article p,
+.articles article a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.articles article h3 {
+    font-size: 24px;
+}
+
+section h2 {
+    font-size: 32px;
+}
+
+#sports {
+    background-color: rgba(14, 14, 27, 0.5);
+}
+
+#economy {
+    background-color: rgba(0, 183, 255, 0.1)    ;
+}
+
+#entret {
+    background-color: rgb(104, 102, 102, 0.2);
+}
+
+#games {
+    background-color: rgb(199, 73, 199, 0.2);
+}
+
+#menuLado {
+    right: -140px;
+    width: 130px;
+    background-color: #2f3640;
+    position: fixed;
+    padding: 10px;
+    transition: 0.8s;
+    top: 70px;
+    border-bottom-left-radius: 10px;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+}
+
+#menuLado li {
+    list-style: none;
+    color: white;
+    margin-bottom: 5px;
+}
+
+#menuLado li a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    margin: 20px 10px;
+}
+
+#botao {
+    position: fixed;    
+    top: 23px;
+    right: 10px;
+    border-style: none;
+    padding: 5px;
+    border-radius: 3px;
+    color: black;
+    font-weight: bolder;
+    border: 1px solid white;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
